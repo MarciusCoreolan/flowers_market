@@ -19,8 +19,9 @@
   }
   .home_page_container {
     display: flex;
-    padding-left: 10%;
+    justify-content: center;
     padding-top: 15%;
+    position:relative;
   }
   .home_page_title {
     user-select: none;
@@ -40,38 +41,5 @@
     width: 100%;
     text-align: center;
     margin-top: 47px;
-  }
-  .info {
-    height: 70vh;
-    width: 20%;
-    position: relative;
-
-    .info_title {
-      color: $greenColor;
-      font-size: 14px;
-      font-weight: 400;
-    }
-    .info_text {
-      font-size: 10px;
-      font-weight: 300;
-      margin-bottom: 25px;
-    }
-    .social {
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 60px;
-      height: 154px;
-      padding: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      user-select: none;
-      position: absolute;
-      right: 0;
-      img {
-        cursor: pointer;
-      }
-    }
   }
 }
