@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./footer.module.scss";
 import logo from "../../images/logo.png";
-import insta from "../../images/insta.png";
-import wpp from "../../images/wpp.png";
-import phone from "../../images/phone.png";
+import insta from "../../images/insta.svg";
+import wpp from "../../images/wpp.svg";
+import phone from "../../images/phone.svg";
 
 function Footer() {
   return (
