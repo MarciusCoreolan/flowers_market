@@ -1,9 +1,7 @@
 import React from 'react';
 import style from './intro.module.scss';
 import Button from "../../../components/Button/Button";
-import insta from "../../../images/insta.svg";
-import wpp from "../../../images/wpp.svg";
-import phone from "../../../images/phone.svg";
+import Info from "../../../components/Info/Info";
 
 function Intro() {
     return (
@@ -23,36 +21,7 @@ function Intro() {
                                 <Button text={"смотреть каталог"} />
                             </div>
                         </div>
-
-                        <div className={style.info}>
-                            <div>
-                                <div className={style.info_title}>zakaz@loverflower.by</div>
-                                <div className={style.info_text}>
-                                    Доставка 24/7 по договоренности с оператором
-                                </div>
-                            </div>
-
-                            <div>
-                                <div className={style.info_title}>ул. Тимирязева 67</div>
-                                <div className={style.info_text}>
-                                    10:00 до 21:00
-                                    <br />
-                                    без выходных
-                                </div>
-                            </div>
-
-                            <div className={style.social}>
-                                <div>
-                                    <img src={insta} alt="" />
-                                </div>
-                                <div>
-                                    <img src={wpp} alt="" />
-                                </div>
-                                <div>
-                                    <img src={phone} alt="" />
-                                </div>
-                            </div>
-                        </div>
+                        <Info/>
                     </div>
                 </div>
             </div>
