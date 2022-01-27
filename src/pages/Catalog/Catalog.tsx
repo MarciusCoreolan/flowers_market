@@ -5,6 +5,7 @@ import insta from "../../images/insta.svg";
 import wpp from "../../images/wpp.svg";
 import phone from "../../images/phone.svg";
 import lightPhone from "../../images/mdi-light_phone.svg";
+import Ellipse from "../../images/Ellipse 45.png"
 function Catalog() {
   return (
     <div className={styles.catalog}>
