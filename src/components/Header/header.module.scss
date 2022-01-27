@@ -1,0 +1,41 @@
+.header {
+  width: 1300px;
+  margin-left: 165px;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  .nav {
+    width: 750px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      cursor: pointer;
+      &:hover {
+        color: yellow;
+      }
+    }
+  }
+  .search {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-info {
+    width: 250px;
+    margin-top: 35px;
+  }
+  .info_title {
+    color: #43ffd2;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .info_text {
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+}

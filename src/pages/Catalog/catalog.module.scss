@@ -1,0 +1,83 @@
+.catalog {
+  width: 100%;
+  height: 1000px;
+  color: #fff;
+  background-color: #040a0a;
+  background-image: url("../../images/image 128.png");
+  background-repeat: no-repeat;
+  .catalog-title-one {
+    font-size: 100px;
+    line-height: 121px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .catalog-title-two {
+    font-family: Cormorant;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 121px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-left: 285px;
+  }
+  .catalogBg {
+    border: 1px solid red;
+    width: 920px;
+    border-radius: 20px;
+    margin-left: 165px;
+    height: 535px;
+    text-transform: uppercase;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
+  .catalog-description {
+      width: 450px;
+      margin-left: 285px;
+  }
+  .catalog-main {
+    display: flex;
+  }
+  .social {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 45px 0 0 130px;
+    width: 60px;
+    height: 154px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    user-select: none;
+    right: 0;
+    img {
+      cursor: pointer;
+    }
+  }
+  .lightPhone {
+    display: flex;
+    width: 140px;
+    justify-content: space-around;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+        img {
+            width: 18px;
+        }
+  }
+}
