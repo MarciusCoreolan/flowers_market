@@ -1,47 +1,46 @@
 @import "../../styles/variables";
 
-.footer{
-    background-color: $darkColor;
-    width: 100%;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 14px 0 60px;
-    .container{
-        display: flex;
-        justify-content: space-between;
+.footer {
+  background-color: $darkColor;
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 14px 0 60px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .title {
+    color: $greenColor;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .text {
+    font-size: 12px;
+    font-weight: 300;
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 4px;
+      &:hover {
+        color: #b0b0b0;
+        transition: 0.3s;
+      }
     }
-    .title{
-        color: $greenColor;
-        font-weight: 700;
-        margin-bottom: 10px;
-        font-size: 14px;
+  }
+  .social {
+    .title {
+      margin: 0;
     }
-    .text{
-        font-size: 12px;
-        font-weight: 300;
-        a{
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 4px;
-            &:hover{
-                color: #b0b0b0;
-                transition: 0.3s;
-            }
-        }
+    .text {
+      margin-bottom: 20px;
     }
-    .social{
-        .title{
-            margin: 0;
-        }
-        .text{
-            margin-bottom: 20px;
-        }
-        img {
-            margin-top: 38px;
-            margin-right: 20px;
-            cursor: pointer;
-        }
+    img {
+      margin-top: 38px;
+      margin-right: 20px;
+      cursor: pointer;
     }
-
+  }
 }

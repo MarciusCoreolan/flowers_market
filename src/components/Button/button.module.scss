@@ -1,0 +1,17 @@
+@import "../../styles/_variables";
+
+.button {
+  background-color: $lightGreenColor;
+  color: $darkColor;
+  padding: 16px 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+
+  &:hover {
+    background-color: $purpleColor;
+    color: white;
+    transition: 0.3s;
+  }
+}

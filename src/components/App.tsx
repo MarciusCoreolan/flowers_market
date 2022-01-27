@@ -1,13 +1,14 @@
-import * as React from "react";
+import React from "react";
 import Footer from "./Footer/Index";
+import HomePage from "../pages/HomePage/HomePage";
 
 function App() {
-
-    return (
-        <div>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div>
+      <HomePage />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
