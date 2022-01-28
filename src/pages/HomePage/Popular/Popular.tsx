@@ -4,7 +4,7 @@ import style from './popular.module.scss'
 function Popular() {
     return (
         <div className={style.popular_section}>
-ыыы
+            ыыы
         </div>
     );
 }
