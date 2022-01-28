@@ -37,7 +37,7 @@ function CatalogSection() {
             </div>
           </div>
 
-          <div>
+          <div className={style.box2}>
             <div className={style.catalog_card}>
               <div className={style.catalog_card_title}>Цветы</div>
               <div>
