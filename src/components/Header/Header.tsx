@@ -4,10 +4,12 @@ import logo from "../../images/logo.svg";
 import search from "../../images/search.svg";
 import lightPhone from "../../images/mdi-light_phone.svg";
 import basket from "../../images/basket.svg";
-import { NavLink, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Info from "../Info/Info";
 function Header() {
   return (
     <div className={styles.header}>
+    <div className='container'>
       <div className={styles.nav}>
         <div className="logo">
           <NavLink to="/">
@@ -34,6 +36,7 @@ function Header() {
           <div className={styles.basket}><img src={basket} alt="" /></div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
