@@ -12,9 +12,10 @@ function Header() {
     <div className='container'>
       <div className={styles.nav}>
         <div className="logo">
-          <NavLink to="/">
-            <img src={logo} alt="" />
-
+        <img src={logo} alt="" />
+        </div>
+        <NavLink to="/">
+            <div>каталог</div>
           </NavLink>
           <div>доставка и оплата</div>
           <div>о нас</div>
@@ -30,12 +31,10 @@ function Header() {
               </div>{" "}
               <div>+375 (29) 113-69-69</div>
             </div>
-            <div className={styles.basket}><img src={basket} alt="" /></div>
           </div>
-        </div>
       </div>
-    </div>
-    </div>
+      </div>
+      </div>
   );
 }
 

@@ -7,9 +7,9 @@ import Popular from "./Popular/Popular";
 function HomePage() {
   return (
     <div className={style.home_page}>
-      <Intro/>
-      <CatalogSection/>
-      <Popular/>
+      <Intro />
+      <CatalogSection />
+      <Popular />
     </div>
   );
 }
