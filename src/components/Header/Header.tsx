@@ -4,20 +4,17 @@ import logo from "../../images/logo.svg";
 import search from "../../images/search.svg";
 import lightPhone from "../../images/mdi-light_phone.svg";
 import basket from "../../images/basket.svg";
-import { NavLink, Routes } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import Info from "../Info/Info";
 function Header() {
   return (
     <div className={styles.header}>
-      <div className={'container'}>
-        <div className={styles.nav}>
-          <div className="logo">
-            <NavLink to="/">
-              <img src={logo} alt="" />
-            </NavLink>
-          </div>
-          <NavLink to="/catalog">
-            <div>каталог</div>
+    <div className='container'>
+      <div className={styles.nav}>
+        <div className="logo">
+          <NavLink to="/">
+            <img src={logo} alt="" />
+
           </NavLink>
           <div>доставка и оплата</div>
           <div>о нас</div>
@@ -37,6 +34,7 @@ function Header() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

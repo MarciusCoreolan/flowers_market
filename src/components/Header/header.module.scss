@@ -6,12 +6,13 @@
   .nav {
     height: 100px;
     display: flex;
+    margin-left: 65px;
     justify-content: space-between;
     align-items: center;
     div {
       cursor: pointer;
       &:hover {
-        color: yellow;
+        color: #43ffd2;
       }
     }
   }
