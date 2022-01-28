@@ -4,6 +4,7 @@ import Button from "../../../components/Button/Button";
 import Info from "../../../components/Info/Info";
 import Header from '../../../components/Header/Header';
 
+
 function Intro() {
     return (
         <div className={style.intro}>
