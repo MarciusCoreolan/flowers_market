@@ -1,8 +1,55 @@
 {
-  "users": [
+  "category": [
     {
       "id": 1,
-      "userName": "aaaa"
+      "categoryName": "8 марта"
+    },
+    {
+      "id": 2,
+      "categoryName": "Букет на 14 февраля"
+    },
+    {
+      "id": 3,
+      "categoryName": "Букет на праздник"
+    },
+    {
+      "id": 4,
+      "categoryName": "Букеты цветов на День рождения"
+    },
+    {
+      "id": 5,
+      "categoryName": "Композиции из цветов"
+    },
+    {
+      "id": 6,
+      "categoryName": "Композиции из цветов в коробке"
+    }
+  ],
+  "bouquets": [
+    {
+      "id": 1,
+      "name": "рубиновые искры",
+      "compound": "Гвоздика (Диантус), Леукодендрон, Леукоспермум (Нутан), Лотос, Роза",
+      "price": "167.00",
+      "description": "Завораживающая глубина ваших чувств передана огненными красками этого букета",
+      "category": [1, 2, 3, 4, 5, 6],
+      "discount": "0",
+      "totalSales": "10",
+      "label": "Для начальника, Мужские букеты",
+      "images": [
+        "https://mykaleidoscope.ru/uploads/posts/2021-03/1615301711_47-p-krasivii-buket-tsvetov-dlya-lyubimoi-obraz-49.jpg",
+        "https://im0-tub-ru.yandex.net/i?id=5a2ee7e406846b4adb9a4913d49b146a-l&ref=rim&n=13&w=1080&h=1080"
+      ]
+    }
+  ],
+  "feedback": [
+    {
+      "bouquetsId": 1,
+      "author": "Ivan",
+      "authorEmail": "Ivan@gmail.com",
+      "date": "10/10/21",
+      "text": "Лучшая доставка цветов в городе! Быстро доставили, привезли к нужному времени, а сам букет превзошел все ожидания!",
+      "evaluation": 4
     }
   ]
 }
