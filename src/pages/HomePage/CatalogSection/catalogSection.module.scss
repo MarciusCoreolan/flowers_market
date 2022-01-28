@@ -3,6 +3,7 @@
 .catalog{
   padding: 30px 0 ;
   color: white;
+  text-transform: uppercase;
 
   .title{
     user-select: none;
@@ -11,7 +12,6 @@
     font-style: normal;
     line-height: 10vw;
     letter-spacing: 20px;
-    text-transform: uppercase;
     opacity: 0.9;
   }
   .catalog_card_container{
@@ -20,6 +20,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .box2{
+    margin-top: 40px;
   }
   .catalog_card{
     width: 500px;
