@@ -4,13 +4,12 @@ import Intro from "./Intro/Intro";
 import CatalogSection from "./CatalogSection/CatalogSection";
 import Popular from "./Popular/Popular";
 
-
 function HomePage() {
   return (
     <div className={style.home_page}>
       <Intro />
-      <CatalogSection/>
-      <Popular/>
+      <CatalogSection />
+      <Popular />
     </div>
   );
 }
