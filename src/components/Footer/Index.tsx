@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./footer.module.scss";
-import logo from "../../images/logo.png";
 import insta from "../../images/insta.svg";
 import wpp from "../../images/wpp.svg";
 import phone from "../../images/phone.svg";
+import Logo from "../Logo/Logo";
 
 function Footer() {
   return (
@@ -11,9 +11,7 @@ function Footer() {
       <div className="container">
         <div className={style.container}>
           <div>
-            <div>
-              <img src={logo} alt="" />
-            </div>
+            <Logo/>
             <div className={style.title}>реквизиты</div>
             <div className={style.text}>
               ООО «Ловефлове» 220035, Республика

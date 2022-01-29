@@ -1,9 +1,14 @@
 @import "../../../styles/variables";
 
 .catalog{
-  padding: 30px 0 ;
+  padding: 20vh 0 ;
   color: white;
+  width: 100%;
   text-transform: uppercase;
+  background-image: url("../../../images/bgCatalogSection.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 
   .title{
     user-select: none;
@@ -29,7 +34,7 @@
     margin: 20px;
     padding: 20px 40px;
     font-size: 18px;
-    background-color: rgba(26, 26, 26, 0.5);
+    background-color: rgba(26, 26, 26, 0.3);
     border-radius: 10px;
     ul{
       padding: 0 20px;
