@@ -19,7 +19,6 @@ function Error() {
                     </p>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

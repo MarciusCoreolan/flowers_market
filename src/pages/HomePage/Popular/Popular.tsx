@@ -10,7 +10,6 @@ function Popular() {
                     <h2>Популярные</h2>
                     <h3>букеты</h3>
                 </div>
-                <Slider/>
             </div>
         </div>
     );

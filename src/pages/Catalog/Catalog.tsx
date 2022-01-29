@@ -2,12 +2,13 @@ import Header from "../../components/Header/Header";
 import styles from "./catalog.module.scss";
 import Info from "../../components/Info/Info";
 import Cards from "../../components/cards/Cards";
+import Footer from "../../components/Footer/Index";
 function Catalog() {
   return (
     <div className={styles.catalog}>
-      <Header />
       <div className={styles.bgImage}>
         <div className="container">
+        <Header />
           <div className={styles["catalog-main"]}>
             <div className={styles.catalogBg}>
               <div className={styles["catalog-title-one"]}>каталог</div>
