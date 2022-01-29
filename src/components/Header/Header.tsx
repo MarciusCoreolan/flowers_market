@@ -9,12 +9,14 @@ import Info from "../Info/Info";
 function Header() {
   return (
     <div className={styles.header}>
-    <div className='container'>
-      <div className={styles.nav}>
-        <div className="logo">
-        <img src={logo} alt="" />
-        </div>
-        <NavLink to="/">
+      <div className="container">
+        <div className={styles.nav}>
+          <NavLink to="/">
+            <div className="logo">
+              <img src={logo} alt="" />
+            </div>
+          </NavLink>
+          <NavLink to="/catalog">
             <div>каталог</div>
           </NavLink>
           <div>доставка и оплата</div>
@@ -28,13 +30,13 @@ function Header() {
             <div className={styles.headerPhone}>
               <div>
                 <img src={lightPhone} alt="" />
-              </div>{" "}
+              </div>
               <div>+375 (29) 113-69-69</div>
             </div>
           </div>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
   );
 }
 
