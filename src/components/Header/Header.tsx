@@ -1,21 +1,17 @@
 import React from "react";
 import styles from "./header.module.scss";
-import logo from "../../images/logo.svg";
 import search from "../../images/search.svg";
 import lightPhone from "../../images/mdi-light_phone.svg";
 import basket from "../../images/basket.svg";
 import { NavLink } from "react-router-dom";
+import Logo from "../Logo/Logo";
 
 function Header() {
   return (
     <div className={styles.header}>
     <div className='container'>
       <div className={styles.nav}>
-        <div className="logo">
-        <NavLink to={'/'}>
-          <img src={logo} alt="" />
-        </NavLink>
-        </div>
+        <Logo/>
         <NavLink to="/catalog">
             <div>каталог</div>
         </NavLink>
