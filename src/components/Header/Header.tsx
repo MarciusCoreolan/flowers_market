@@ -18,7 +18,7 @@ function Header() {
         </div>
         <NavLink to="/catalog">
             <div>каталог</div>
-          </NavLink>
+        </NavLink>
           <div>доставка и оплата</div>
           <div>о нас</div>
           <div>контакты</div>
@@ -30,16 +30,16 @@ function Header() {
             <div className={styles.headerPhone}>
               <div>
                 <img src={lightPhone} alt="" />
-              </div>{" "}
+              </div>
               <div>+375 (29) 113-69-69</div>
             </div>
             <div className={styles.basket}>
               <img src={basket} alt=""/>
             </div>
           </div>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
   );
 }
 
