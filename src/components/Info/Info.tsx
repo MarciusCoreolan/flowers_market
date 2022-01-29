@@ -7,7 +7,7 @@ import phone from "../../images/phone.svg";
 function Info() {
     return (
         <div className={style.info}>
-            {/* <div>
+            <div>
                 <div className={style.info_title}>zakaz@loverflower.by</div>
                 <div className={style.info_text}>
                     Доставка 24/7 по договоренности с оператором
@@ -21,7 +21,7 @@ function Info() {
                     <br />
                     без выходных
                 </div>
-            </div> */}
+            </div>
 
             <div className={style.social}>
                 <div>
