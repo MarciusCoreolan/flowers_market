@@ -11,7 +11,7 @@ function HomePage() {
       <Intro />
       <CatalogSection />
       <Popular />
-      {/*<Footer/>*/}
+      <Footer />
     </div>
   );
 }
