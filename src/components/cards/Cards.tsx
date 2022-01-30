@@ -1,10 +1,12 @@
 import styles from "./cards.module.scss";
-import Card from "./Card";
+import Card from "./Card"
 import { useTypeSelector } from "../../hooks/useTypeSelector";
 function Cards() {
   const { bouquest, error, loading }: any = useTypeSelector(
     (state) => state.bouquest
   );
+
+
   return (
     <div className={styles["cards-main"]}>
       <div className={styles.filters}>

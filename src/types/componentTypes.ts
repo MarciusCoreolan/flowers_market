@@ -1,6 +1,9 @@
-
 export interface IButton {
-    text?: string,
+    text: string,
     click?:any,
     disabled?: boolean,
 }
+
+
+
+

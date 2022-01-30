@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import styles from "./product.module.scss";
 import productImage from "../../images/image 141.png";
-import Button from "../../components/Button/Button";
 import { NavLink } from "react-router-dom";
+
 function ProductCard() {
   return (
     <div className={styles.product}>

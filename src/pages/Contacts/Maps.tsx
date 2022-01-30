@@ -1,6 +1,6 @@
 import React from "react";
-import { YMaps, Map, Placemark } from "react-yandex-maps";
 import styles from "./contacts.module.scss";
+import {Placemark, YMaps, Map} from "react-yandex-maps";
 
 function Maps() {
   const mapData = {

@@ -3,6 +3,7 @@ import styles from "./catalog.module.scss";
 import Info from "../../components/Info/Info";
 import Cards from "../../components/Cards/Cards";
 import Footer from "../../components/Footer/Index";
+
 function Catalog() {
   return (
     <div className={styles.catalog}>
@@ -39,7 +40,6 @@ function Catalog() {
                 <div>Упаковка подарков</div>
               </div>
             </div>
-            <Info />
           </div>
         </div>
       </div>

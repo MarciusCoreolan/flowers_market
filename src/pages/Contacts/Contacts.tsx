@@ -20,7 +20,7 @@ function Contacts() {
               <p className={styles.contacts_feedback_title}>напишите нам</p>
             </div>
             <div className={styles.contacts_feedback_right}>
-              <div className={styles.contacts_feedback_line}></div>
+              <div className={styles.contacts_feedback_line}> </div>
               <div className={styles.contacts_feedback_text}>
                 <p>
                   Отправьте ваш вопрос, заказ, <br />
@@ -31,7 +31,7 @@ function Contacts() {
               </div>
               <Forms />
               <div className={styles.contacts_button}>
-                <Button />
+                <Button text={'text'}/>
               </div>
               <div className={styles.approval}>
                 Нажимая на кнопку «Отправить», я даю свое согласие на обработку{" "}
