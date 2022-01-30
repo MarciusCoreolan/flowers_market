@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./cards.module.scss";
+import styles from "./card.module.scss";
 import buket from "../../images/image 114.png";
 import { NavLink } from "react-router-dom";
 function Card({ bouquest }: any) {
-  console.log(bouquest.name);
 
   return (
     <>

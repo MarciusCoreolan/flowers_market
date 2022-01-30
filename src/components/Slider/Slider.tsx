@@ -1,56 +1,53 @@
-import React, {useEffect, useRef, useState} from "react";
-import Card from "./Card";
+import React from "react";
+import Card from "../cards/Card";
 import style from "./slider.module.scss";
-import right_button from "../../images/right_button.png";
-import left_button from "../../images/left_button.png";
+import Carousel from "react-elastic-carousel";
+import prev from "../../images/left_button.png";
+import next from "../../images/right_button.png";
+import { ISlider } from "../../types/componentTypes";
 
-function Slider({ items }: any) {
-  const slider: any = useRef(null);
-  const [prev, setPrev] = useState(true);
-  const [next, setNext] = useState(false);
-  const [position, setPosition] = useState(0);
+function Slider({ items }: ISlider) {
 
-  const prevHandler = () => {};
-    // console.log(position, 'position')
-  const nextHandler = () => {
-      console.log(items.length * 100)
-      if (position <= -(items.length * 100)){
-          setNext(true)
-          setPrev(false)
-      } else {
-          setPosition(position - 300);
-          setPrev(false)
-          // console.log('false')
-      }
-  };
-
-  useEffect(()=>{
-      slider.current.childNodes.forEach((item: any) => {
-          item.style = `transform: translateX(${position}px)`;
-      });
-  },[position, next, prev])
+  const breakPoints: any = [
+    { width: 1, itemsToShow: 1 },
+    { width: 500, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
 
   return (
     <div className={style.slider}>
-      <div className={style.slider_track} ref={slider}>
-        {items.map((item: any) => (
-          <Card item={item} key={item} />
+      <Carousel
+        itemsToShow={3}
+        breakPoints={breakPoints}
+        isRTL={false}
+        pagination={false}
+        itemPadding={[0, 0, 0, 0]}
+        className={style.slider_carousel}
+        renderArrow={({ type, onClick }) => (
+          <div onClick={onClick}>
+            {type === "PREV" ? (
+              <img
+                className={style.slider_arrow_prev}
+                src={prev}
+                alt="scroll left"
+              />
+            ) : (
+              <img
+                className={style.slider_arrow_next}
+                src={next}
+                alt="scroll right"
+              />
+            )}
+          </div>
+        )}
+      >
+        {items.map((bouquet: any) => (
+          <div className={style.slide} key={bouquet.id}>
+            <Card bouquest={bouquet} />
+          </div>
         ))}
-      </div>
-      <button
-        className={style.slider_button_left}
-        onClick={prevHandler}
-        disabled={prev}
-      >
-        <img src={left_button} alt="" />
-      </button>
-      <button
-        className={style.slider_button_right}
-        onClick={nextHandler}
-        disabled={next}
-      >
-        <img src={right_button} alt="" />
-      </button>
+      </Carousel>
     </div>
   );
 }
