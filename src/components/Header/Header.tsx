@@ -9,7 +9,7 @@ import Logo from "../Logo/Logo";
 function Header() {
   return (
     <div className={styles.header}>
-    <div className='container'>
+    <div className={styles.header_container}>
       <div className={styles.nav}>
         <Logo/>
         <NavLink to="/catalog">

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./cards.module.scss";
 import buket from "../../images/image 114.png";
 import Card from "./Card";
+
 function Cards() {
 
   return (
