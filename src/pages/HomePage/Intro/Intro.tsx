@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './intro.module.scss';
 import Button from "../../../components/Button/Button";
-import Info from "../../../components/Info/Info";
 import Header from '../../../components/Header/Header';
 
 function Intro() {
@@ -23,7 +22,6 @@ function Intro() {
                                 <Button text={"смотреть каталог"} />
                             </div>
                         </div>
-                        <Info/>
                     </div>
                 </div>
             </div>
