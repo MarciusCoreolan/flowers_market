@@ -15,6 +15,7 @@ body{
 .container {
   width: 90%;
   margin: auto;
+  padding-top: $headerHeight;
 }
 
 h1,
@@ -30,18 +31,4 @@ a {
   text-decoration: none;
 }
 
-.slider{
-  padding: 40px;
-  max-width: 90%;
-  margin: 50px auto 0;
-  .jRFJkP:hover:enabled,
-  .jRFJkP:focus:enabled{
-    background-color: inherit;
-    box-shadow: none;
-  }
-  button{
-    background-color: inherit;
-    color: #43FFD2;
-    box-shadow: none;
-  }
-}
+
