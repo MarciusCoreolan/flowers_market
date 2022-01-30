@@ -1,14 +1,15 @@
 .catalog {
   color: #fff;
   background-color: #040a0a;
-  background-image: url("../../images/image 128.png");
+  background-image: url("../../images/Group 2.png");
   background-repeat: no-repeat;
+  background-size: cover;
   .catalog-main {
     width: 1110px;
     margin: 0 auto;
     margin-top: 70px;
     background-repeat: no-repeat;
-    height: 690px;
+    height: 590px;
   }
   .catalog-title-one {
     margin-left: 20px;
@@ -34,13 +35,10 @@
     position: relative;
     width: 1110px;
     border-radius: 20px;
-    height: 535px;
+    height: 555px;
     text-transform: uppercase;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.3) 60%,
-      rgba(0, 0, 0, 0.9) 100%
-    );
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.3);
   }
   .catalog-description {
     width: 450px;
@@ -88,7 +86,6 @@
   }
 }
 .bgImage {
-  background-image: url("../../images/image 129.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -114,9 +111,28 @@
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 40px;
-      &:hover {
-        background-color: #43ffd2;
-        color: #000;
-      }
+    &:hover {
+      background-color: #43ffd2;
+      color: #000;
+    }
+  }
+}
+.filtr {
+  width: 1110px;
+  margin: auto;
+  text-align: right;
+  margin-bottom: 20px;
+  select {
+    padding: 10px;
+    width: 257px;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
   }
 }
