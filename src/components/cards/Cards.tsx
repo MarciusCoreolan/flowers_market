@@ -1,9 +1,12 @@
-import React from "react";
 import styles from "./cards.module.scss";
-import buket from "../../images/image 114.png";
-import Card from "./Card";
+import Card from "./Card"
+import { useTypeSelector } from "../../hooks/useTypeSelector";
 
 function Cards() {
+  const { bouquest, error, loading }: any = useTypeSelector(
+    (state) => state.bouquest
+  );
+
 
   return (
     <div className={styles["cards-main"]}>
@@ -41,7 +44,9 @@ function Cards() {
         </div>
       </div>
       <div className={styles.cards}>
-        <Card />
+        {bouquest.map((bouquest: any,index: number) => {
+          return <Card bouquest={bouquest} index={index} />;
+        })}
       </div>
     </div>
   );
