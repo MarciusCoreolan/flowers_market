@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./cards.module.scss";
 import buket from "../../images/image 114.png";
-import { NavLink } from "react-router-dom";
+import Card from "./Card";
 function Cards() {
   return (
     <div className={styles["cards-main"]}>
@@ -37,47 +37,9 @@ function Cards() {
             <div className={styles["filter-button"]}>сбросить фильтр</div>
           </div>
         </div>
-        <div></div>
       </div>
       <div className={styles.cards}>
-        <NavLink to="/product">
-        <div className={styles.card}>
-          <img src={buket} alt="" />
-          <div className={styles["cards-title"]}>описание</div>
-          <div className={styles["cards-text"]}>Цена</div>
-          <div className={styles["cards-button"]}>В корзину</div>
-        </div>
-        </NavLink>
-        <div className={styles.card}>
-          <img src={buket} alt="" />
-          <div className={styles["cards-title"]}>описание</div>
-          <div className={styles["cards-text"]}>Цена</div>
-          <div className={styles["cards-button"]}>В корзину</div>
-        </div>
-        <div className={styles.card}>
-          <img src={buket} alt="" />
-          <div className={styles["cards-title"]}>описание</div>
-          <div className={styles["cards-text"]}>Цена</div>
-          <div className={styles["cards-button"]}>В корзину</div>
-        </div>
-        <div className={styles.card}>
-          <img src={buket} alt="" />
-          <div className={styles["cards-title"]}>описание</div>
-          <div className={styles["cards-text"]}>Цена</div>
-          <div className={styles["cards-button"]}>В корзину</div>
-        </div>
-        <div className={styles.card}>
-          <img src={buket} alt="" />
-          <div className={styles["cards-title"]}>описание</div>
-          <div className={styles["cards-text"]}>Цена</div>
-          <div className={styles["cards-button"]}>В корзину</div>
-        </div>
-        <div className={styles.card}>
-          <img src={buket} alt="" />
-          <div className={styles["cards-title"]}>описание</div>
-          <div className={styles["cards-text"]}>Цена</div>
-          <div className={styles["cards-button"]}>В корзину</div>
-        </div>
+        <Card />
       </div>
     </div>
   );

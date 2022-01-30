@@ -44,6 +44,13 @@ function Catalog() {
         </div>
       </div>
       <div className="container">
+      <div className={styles.filtr}>
+        <select>
+          <option value="">по популярности</option>
+          <option value="">по стоимости</option>
+          <option value="">по цветку</option>
+        </select>
+      </div>
         <Cards />
       </div>
     </div>

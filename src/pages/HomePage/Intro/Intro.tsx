@@ -3,6 +3,7 @@ import style from "./intro.module.scss";
 import Button from "../../../components/Button/Button";
 import Info from "../../../components/Info/Info";
 import Header from "../../../components/Header/Header";
+import { NavLink } from "react-router-dom";
 
 function Intro() {
   return (
@@ -20,7 +21,9 @@ function Intro() {
                 Создаём для тех, кто ценит свежесть и изящество цветка
               </p>
               <div className={style.home_page_intro_button}>
-                <Button text={"смотреть каталог"} />
+                <NavLink to={"/catalog"}>
+                  <Button text={"смотреть каталог"} />
+                </NavLink>
               </div>
             </div>
           </div>
