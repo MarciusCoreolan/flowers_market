@@ -9,21 +9,11 @@ import Logo from "../Logo/Logo";
 function Header() {
   return (
     <div className={styles.header}>
-<<<<<<< HEAD
-      <div className="container">
-        <div className={styles.nav}>
-          <div className="logo">
-            <NavLink to={"/"}>
-              <img src={logo} alt="" />
-            </NavLink>
-          </div>
-          <NavLink to="/catalog">
-=======
+  <NavLink to="/catalog">
     <div className='container'>
       <div className={styles.nav}>
         <Logo/>
         <NavLink to="/catalog">
->>>>>>> ca963956263ca5c1e4dd8b0b79b8769f44575e40
             <div>каталог</div>
         </NavLink>
           <div>доставка и оплата</div>
@@ -48,6 +38,7 @@ function Header() {
           </div>
         </div>
       </div>
+      </NavLink>
     </div>
   );
 }
