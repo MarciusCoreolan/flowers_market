@@ -1,8 +1,7 @@
 import Header from "../../components/Header/Header";
 import styles from "./catalog.module.scss";
-import Info from "../../components/Info/Info";
 import Cards from "../../components/cards/Cards";
-import Footer from "../../components/Footer/Index";
+
 function Catalog() {
   return (
     <div className={styles.catalog}>
@@ -39,7 +38,6 @@ function Catalog() {
                 <div>Упаковка подарков</div>
               </div>
             </div>
-            <Info />
           </div>
         </div>
       </div>
