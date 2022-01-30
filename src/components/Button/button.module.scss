@@ -1,7 +1,9 @@
 @import "../../styles/_variables";
 
 .button {
-  background-color: $lightGreenColor;
+  width: 255px;
+  height: 50px;
+  background: #43FFD2;
   color: $darkColor;
   padding: 16px 50px;
   border: none;

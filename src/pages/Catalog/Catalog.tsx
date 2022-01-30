@@ -1,12 +1,13 @@
 import Header from "../../components/Header/Header";
 import styles from "./catalog.module.scss";
 import Cards from "../../components/cards/Cards";
+
 function Catalog() {
   return (
     <div className={styles.catalog}>
-      <Header />
       <div className={styles.bgImage}>
         <div className="container">
+        <Header />
           <div className={styles["catalog-main"]}>
             <div className={styles.catalogBg}>
               <div className={styles["catalog-title-one"]}>каталог</div>
@@ -41,6 +42,13 @@ function Catalog() {
         </div>
       </div>
       <div className="container">
+      <div className={styles.filtr}>
+        <select>
+          <option value="">по популярности</option>
+          <option value="">по стоимости</option>
+          <option value="">по цветку</option>
+        </select>
+      </div>
         <Cards />
       </div>
     </div>

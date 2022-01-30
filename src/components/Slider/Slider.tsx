@@ -11,7 +11,7 @@ function Slider({ items }: any) {
   const [position, setPosition] = useState(0);
 
   const prevHandler = () => {};
-    console.log(position, 'position')
+    // console.log(position, 'position')
   const nextHandler = () => {
       console.log(items.length * 100)
       if (position <= -(items.length * 100)){
