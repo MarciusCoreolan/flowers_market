@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./header.module.scss";
-import logo from "../../images/logo.svg";
 import search from "../../images/search.svg";
 import lightPhone from "../../images/mdi-light_phone.svg";
 import basket from "../../images/basket.svg";
 import { NavLink } from "react-router-dom";
+import Logo from "../Logo/Logo";
 
 function Header() {
   return (
     <div className={styles.header}>
+<<<<<<< HEAD
       <div className="container">
         <div className={styles.nav}>
           <div className="logo">
@@ -17,8 +18,14 @@ function Header() {
             </NavLink>
           </div>
           <NavLink to="/catalog">
+=======
+    <div className='container'>
+      <div className={styles.nav}>
+        <Logo/>
+        <NavLink to="/catalog">
+>>>>>>> ca963956263ca5c1e4dd8b0b79b8769f44575e40
             <div>каталог</div>
-          </NavLink>
+        </NavLink>
           <div>доставка и оплата</div>
           <div>о нас</div>
           <NavLink to="/contacts">
@@ -32,7 +39,7 @@ function Header() {
             <div className={styles.headerPhone}>
               <div>
                 <img src={lightPhone} alt="" />
-              </div>{" "}
+              </div>
               <div>+375 (29) 113-69-69</div>
             </div>
             <div className={styles.basket}>
