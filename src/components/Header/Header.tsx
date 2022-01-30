@@ -9,6 +9,7 @@ import Logo from "../Logo/Logo";
 function Header() {
   return (
     <div className={styles.header}>
+  <NavLink to="/catalog">
     <div className='container'>
       <div className={styles.nav}>
         <Logo/>
@@ -37,6 +38,7 @@ function Header() {
           </div>
         </div>
       </div>
+      </NavLink>
     </div>
   );
 }

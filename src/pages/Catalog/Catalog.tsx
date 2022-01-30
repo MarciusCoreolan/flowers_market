@@ -1,6 +1,8 @@
 import Header from "../../components/Header/Header";
 import styles from "./catalog.module.scss";
-import Cards from "../../components/cards/Cards";
+import Info from "../../components/Info/Info";
+import Cards from "../../components/Cards/Cards";
+import Footer from "../../components/Footer/Index";
 
 function Catalog() {
   return (
