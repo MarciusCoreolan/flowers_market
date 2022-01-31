@@ -15,8 +15,8 @@ function Maps() {
       <p>Мы на карте</p>
       <YMaps>
         <Map width="1110px" height="425px" defaultState={mapData}>
-          {coordinates.map((coordinate) => (
-            <Placemark geometry={coordinate} />
+          {coordinates.map((coordinate, index) => (
+            <Placemark geometry={coordinate} key={index} />
           ))}
         </Map>
       </YMaps>

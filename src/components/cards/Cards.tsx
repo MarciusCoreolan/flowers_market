@@ -1,11 +1,11 @@
 import styles from "./cards.module.scss";
-import Card from "./Card"
+import Card from "./Card";
 import { useTypeSelector } from "../../hooks/useTypeSelector";
+import { Ibuket } from "../../types/bouquestTypes";
 function Cards() {
   const { bouquest, error, loading }: any = useTypeSelector(
     (state) => state.bouquest
   );
-
 
   return (
     <div className={styles["cards-main"]}>
@@ -43,8 +43,8 @@ function Cards() {
         </div>
       </div>
       <div className={styles.cards}>
-        {bouquest.map((bouquest: any,index: number) => {
-          return <Card bouquest={bouquest} index={index} />;
+        {bouquest.map((bouquest: any, index: number) => {
+          return <Card bouquest={bouquest} />;
         })}
       </div>
     </div>

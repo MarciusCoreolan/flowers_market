@@ -3,7 +3,7 @@ export interface bouquestState {
   loading: boolean;
   error: null | string;
 }
-interface Ibuket {
+export interface Ibuket {
     id: number,
     name: string,
     compound: string,

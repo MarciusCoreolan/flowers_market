@@ -31,7 +31,7 @@ function Contacts() {
               </div>
               <Forms />
               <div className={styles.contacts_button}>
-                <Button text={'text'}/>
+                <Button text={'ОТПРАВИТЬ'}/>
               </div>
               <div className={styles.approval}>
                 Нажимая на кнопку «Отправить», я даю свое согласие на обработку{" "}
