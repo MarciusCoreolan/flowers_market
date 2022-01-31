@@ -10,7 +10,6 @@ import { loadBouquest } from "../redux/reducers/bouquetsReducer";
 import ProductCard from "../pages/product/ProductCard";
 import Contacts from "../pages/Contacts/Contacts";
 import Header from "./Header/Header";
-import Footer from "./Footer/Index";
 
 
 function App() {

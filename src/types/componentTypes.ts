@@ -4,6 +4,10 @@ export interface IButton {
     disabled?: boolean,
 }
 
+export interface ITitle {
+    text: string
+}
+
 
 
 

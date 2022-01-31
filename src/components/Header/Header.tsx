@@ -37,7 +37,6 @@ function Header() {
           </div>
         </div>
       </div>
-      </NavLink>
     </div>
   );
 }
