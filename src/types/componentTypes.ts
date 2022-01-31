@@ -10,6 +10,14 @@ export interface ITitle {
     text: string
 }
 
+export interface IAboutTitle {
+    text: string
+}
+
+export interface IAboutSubTitle {
+    text: string
+}
+
 export interface ISlider {
     items: Ibuket[]
 }

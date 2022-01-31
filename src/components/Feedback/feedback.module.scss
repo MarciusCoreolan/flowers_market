@@ -1,8 +1,10 @@
+@import "../../styles/_variables";
+
 .feedback_line {
   width: 255px;
   padding-top: 60px;
   margin: 0 0 73px auto;
-  border-bottom: 1px solid #43FFD2;
+  border-bottom: 1px solid $lightGreenColor;
 }
 .feedback_text {
   width: 255px;
@@ -47,6 +49,10 @@
     text-transform: uppercase;
     color: #555555;
     background: rgba(0, 0, 0, 0.2);
+    &:focus {
+      border: 1px solid #FFFFFF;
+      color: #FFFFFF;
+    }
   }
   textarea {
     height: 120px;
