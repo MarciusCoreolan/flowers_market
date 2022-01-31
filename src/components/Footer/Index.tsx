@@ -8,7 +8,6 @@ import Logo from "../Logo/Logo";
 function Footer() {
   return (
     <div className={style.footer}>
-      <div className="container">
         <div className={style.container}>
           <div>
             <Logo/>
@@ -87,7 +86,6 @@ function Footer() {
             <img src={phone} alt="" />
           </div>
         </div>
-      </div>
     </div>
   );
 }

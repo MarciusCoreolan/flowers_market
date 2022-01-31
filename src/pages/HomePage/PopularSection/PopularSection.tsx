@@ -4,7 +4,7 @@ import Slider from "../../../components/Slider/Slider";
 import {useTypeSelector} from "../../../hooks/useTypeSelector";
 import {Ibuket} from "../../../types/bouquestTypes"
 
-function Popular() {
+function PopularSection() {
     const bouquets: any = useTypeSelector((state) => state.bouquest?.bouquest);
     const popularBouquets = bouquets.filter((item:Ibuket) => item.totalSales >= '10')
 
@@ -21,4 +21,4 @@ function Popular() {
     );
 }
 
-export default Popular;
+export default PopularSection;
