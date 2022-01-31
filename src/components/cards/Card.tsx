@@ -1,4 +1,4 @@
-import styles from "./cards.module.scss";
+import styles from "./card.module.scss";
 import { NavLink } from "react-router-dom";
 interface Ibuket {
   bouquest: {

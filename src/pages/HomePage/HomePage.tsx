@@ -9,7 +9,7 @@ function HomePage() {
     <div className={style.home_page}>
       <Intro />
       <CatalogSection />
-      {/* <Popular /> */}
+      <Popular />
     </div>
   );
 }
