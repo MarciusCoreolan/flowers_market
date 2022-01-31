@@ -1,3 +1,5 @@
+import React from "react";
+
 import styles from "./card.module.scss";
 import { NavLink } from "react-router-dom";
 interface Ibuket {
