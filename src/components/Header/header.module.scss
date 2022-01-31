@@ -1,15 +1,23 @@
 .header {
-  max-width: 1500px;
-  min-width: 1110px;
+  width: 100%;
   margin:0 auto;
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
   height: 100px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .header_container{
+    width: 90%;
+    margin: auto;
+  }
   .nav {
-    height: 100px;
     display: flex;
-    margin-left: 65px;
     justify-content: space-between;
     align-items: center;
     div {

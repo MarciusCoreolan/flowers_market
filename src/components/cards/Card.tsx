@@ -1,6 +1,5 @@
 import styles from "./cards.module.scss";
 import { NavLink } from "react-router-dom";
-
 interface Ibuket {
   bouquest: {
     buket: any[];

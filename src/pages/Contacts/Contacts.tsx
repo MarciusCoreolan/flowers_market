@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./contacts.module.scss";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Index";
 import BoxGroup from "./BoxGroup";
 import Forms from "./Forms";
 import Button from "../../components/Button/Button";
@@ -44,7 +43,6 @@ function Contacts() {
           <Maps />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
