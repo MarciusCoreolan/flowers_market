@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.how_make_order{
+  background-image: url("../../../images/bgHowMakeOrder.png");
+  background-repeat: no-repeat;
+  background-size: 20vw 40vw;
+  background-position: left center;
+  padding-bottom: 100px;
+  color: white;
+  text-transform: uppercase;
+
+  &_title{
+    margin-left: 10%;
+  }
+  &_main{
+    margin-top: 30px;
+    width: 70%;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 2px solid $pinkColor;
+
+    .main_column{
+      width: 45%;
+      margin: 0 10px;
+    }
+    .main_steps{
+      margin: 0 0 40px 0;
+    }
+    .main_steps_title{
+      font-size: 30px;
+      color: $pinkColor;
+      font-weight: bold;
+    }
+  }
+}

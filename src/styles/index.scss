@@ -2,7 +2,7 @@
 @import "variables";
 
 body{
-  background-color: #000;
+  background-color: $darkColor;
 }
 
 * {
@@ -25,6 +25,9 @@ h4,
 h5,
 h6 {
   font-family: "Cormorant", serif;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 a {
   color: inherit;
