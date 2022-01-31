@@ -1,9 +1,17 @@
 import React from "react";
-import styles from "./cards.module.scss";
-import { NavLink } from "react-router-dom";
-function Card({ bouquest }: any) {
-  console.log(bouquest.name);
 
+import styles from "./card.module.scss";
+import { NavLink } from "react-router-dom";
+interface Ibuket {
+  bouquest: {
+    buket: any[];
+    name: string;
+    price: string;
+    images: string;
+  };
+}
+
+function Card({ bouquest }: Ibuket) {
   return (
     <>
       <div className={styles.card}>

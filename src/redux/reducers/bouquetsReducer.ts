@@ -1,5 +1,5 @@
 import { Dispatch } from "redux";
-import { bouquestActionTypes, bouquestAction, bouquestState } from "./user";
+import { bouquestActionTypes, bouquestAction, bouquestState } from "../../types/bouquestTypes";
 
 const initialState: bouquestState = {
   bouquest: [],
@@ -16,7 +16,7 @@ export const bouquestReducer = (
       return { loading: true, error: null, bouquest: [] };
     case bouquestActionTypes.FETCH_BOUQUEST_ERROR:
       return { loading: false, error: action.payload, bouquest: [] };
-    case bouquestActionTypes.FETCH_BOUQUEST_SUCCESS:
+      case bouquestActionTypes.FETCH_BOUQUEST_SUCCESS:
       return { loading: false, error: null, bouquest: action.payload };
     default:
       return state;
@@ -25,16 +25,16 @@ export const bouquestReducer = (
 
 export const loadBouquest = () => {
   return async (dispatch: Dispatch<bouquestAction>) => {
-    dispatch({
-      type: bouquestActionTypes.FETCH_BOUQUEST,
-    });
-    fetch("http://localhost:3001/bouquets")
+      dispatch({
+        type: bouquestActionTypes.FETCH_BOUQUEST,
+      });
+      fetch("http://localhost:3001/bouquets")
       .then((response) => response.json())
-      .then((json) => {
+      .then(json => {
         dispatch({
           type: bouquestActionTypes.FETCH_BOUQUEST_SUCCESS,
-          payload: json,
-        });
-      });
-  };
-};
+          payload: json
+        })
+      })
+    }}
+

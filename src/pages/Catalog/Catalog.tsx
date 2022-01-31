@@ -1,6 +1,8 @@
 import styles from "./catalog.module.scss";
 import Cards from "../../components/cards/Cards";
+
 import Title from "../../components/Title/Title";
+
 
 function Catalog() {
   return (

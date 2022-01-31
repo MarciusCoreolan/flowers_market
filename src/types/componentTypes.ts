@@ -1,3 +1,5 @@
+import {Ibuket} from "./bouquestTypes"
+
 export interface IButton {
     text: string,
     click?:any,
@@ -8,6 +10,7 @@ export interface ITitle {
     text: string
 }
 
-
-
+export interface ISlider {
+    items: Ibuket[]
+}
 
