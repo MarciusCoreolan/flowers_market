@@ -44,7 +44,7 @@ function Cards() {
       </div>
       <div className={styles.cards}>
         {bouquest.map((bouquest: any,index: number) => {
-          return <Card bouquest={bouquest} index={index} key={bouquest.id}/>;
+          return <Card bouquest={bouquest}  />;
         })}
       </div>
     </div>

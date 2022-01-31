@@ -1,4 +1,4 @@
-import {Ibuket} from "../redux/reducers/user";
+import {Ibuket} from "./bouquestTypes"
 
 export interface IButton {
     text: string,
@@ -8,6 +8,4 @@ export interface IButton {
 export interface ISlider {
     items: Ibuket[]
 }
-
-
 

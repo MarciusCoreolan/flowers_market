@@ -2,7 +2,7 @@ import React from 'react';
 import style from './popular.module.scss'
 import Slider from "../../../components/Slider/Slider";
 import {useTypeSelector} from "../../../hooks/useTypeSelector";
-import {Ibuket} from "../../../redux/reducers/user";
+import {Ibuket} from "../../../types/bouquestTypes"
 
 function Popular() {
     const bouquets: any = useTypeSelector((state) => state.bouquest?.bouquest);

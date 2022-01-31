@@ -7,7 +7,6 @@ import next from "../../images/right_button.png";
 import { ISlider } from "../../types/componentTypes";
 
 function Slider({ items }: ISlider) {
-
   const breakPoints: any = [
     { width: 1, itemsToShow: 1 },
     { width: 500, itemsToShow: 2 },
