@@ -6,7 +6,6 @@ function Cards() {
   const { bouquest, error, loading }: any = useTypeSelector(
     (state) => state.bouquest
   );
-  console.log(bouquest)
   return (
     <div className={styles["cards-main"]}>
       <div className={styles.filters}>
@@ -44,7 +43,7 @@ function Cards() {
       </div>
       <div className={styles.cards}>
         {bouquest.map((bouquest: any,index: number) => {
-          return <Card bouquest={bouquest}  />;
+          return <Card bouquest={bouquest} key={index}  />;
         })}
       </div>
     </div>

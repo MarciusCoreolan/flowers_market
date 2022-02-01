@@ -7,10 +7,7 @@ const initialState: bouquestState = {
   error: null,
 };
 
-export const bouquestReducer = (
-  state = initialState,
-  action: bouquestAction
-): bouquestState | undefined => {
+export const bouquestReducer = (state = initialState, action: bouquestAction): bouquestState | undefined => {
   switch (action.type) {
     case bouquestActionTypes.FETCH_BOUQUEST:
       return { loading: true, error: null, bouquest: [] };
