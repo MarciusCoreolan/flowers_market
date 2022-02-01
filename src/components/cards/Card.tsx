@@ -6,14 +6,16 @@ interface Ibuket {
     name: string;
     price: string;
     images: string;
+    id: number;
   };
 }
 
 function Card({ bouquest }: Ibuket) {
+  
   return (
     <>
       <div className={styles.card}>
-        <NavLink to="/product">
+        <NavLink to={`/${bouquest.id}`}>
           <img src={bouquest.images} alt="" />
           <div className={styles["cards-title"]}>{bouquest.name}</div>
           <div className={styles["cards-text"]}>{bouquest.price} Р</div>
