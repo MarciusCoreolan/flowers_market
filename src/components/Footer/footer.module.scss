@@ -6,9 +6,15 @@
   text-transform: uppercase;
   color: #fff;
   padding: 14px 0 60px;
+
   .container {
     display: flex;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
     justify-content: space-between;
+
   }
   .title {
     color: $greenColor;

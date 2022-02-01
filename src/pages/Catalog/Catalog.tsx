@@ -1,6 +1,9 @@
 import styles from "./catalog.module.scss";
 import Cards from "../../components/cards/Cards";
 
+import Title from "../../components/Title/Title";
+
+
 function Catalog() {
   return (
     <div className={styles.catalog}>
@@ -8,9 +11,13 @@ function Catalog() {
         <div className="container">
           <div className={styles["catalog-main"]}>
             <div className={styles.catalogBg}>
-              <div className={styles["catalog-title-one"]}>каталог</div>
+              <div className={styles["catalog-title-one"]}>
+                <Title text={'каталог'}/>
+              </div>
               <div>
-                <div className={styles["catalog-title-two"]}>букетов</div>
+                <div className={styles["catalog-title-two"]}>
+                  <Title text={'букетов'}/>
+                </div>
                 <div className={styles["catalog-description"]}>
                   В нашем магазине самый большой выбор букетов для любых
                   событий:

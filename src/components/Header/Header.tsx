@@ -16,7 +16,9 @@ function Header() {
             <div>каталог</div>
         </NavLink>
           <div>доставка и оплата</div>
+        <NavLink to="/about" >
           <div>о нас</div>
+        </NavLink>
           <NavLink to="/contacts">
             <div>контакты</div>
           </NavLink>
