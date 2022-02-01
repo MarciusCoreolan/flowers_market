@@ -1,3 +1,5 @@
+@import "../../styles/_variables";
+
 .error {
   background-image: url("../../images/ErrorPage404.png");
   background-repeat: no-repeat;
@@ -16,7 +18,7 @@
     }
     .home {
       text-decoration-line: underline;
-      color: #43FFD2;
+      color: $lightGreenColor;
       cursor: pointer;
     }
   }

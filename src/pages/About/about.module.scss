@@ -1,0 +1,81 @@
+@import "../../styles/_variables";
+
+%fontDecoration {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.about {
+  background-image: url("../../images/AboutUs.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    margin: auto;
+    .about_title {
+      padding: 100px 0 100px 210px;
+    }
+    .content {
+      padding-left: 300px;
+      .content_flex {
+        display: flex;
+        .line {
+          width: 60px;
+          border-top: 1px solid $lightGreenColor;
+          margin: 35px 0 0 20px;
+        }
+      }
+      .content_blackBackground {
+        margin: 0 0 100px 240px;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        padding: 40px 0 40px 20px;
+        .about_text {
+          @extend %fontDecoration;
+          letter-spacing: 0.04em;
+          margin-top: 20px;
+        }
+      }
+      .block_garant {
+        width: 825px;
+        margin: 20px 0 100px 0;
+      }
+      .zakaz_buket {
+        width: 695px;
+      }
+      .content_table {
+        width: 665px;
+        margin: 20px 0 0 290px;
+        .table {
+          @extend %fontDecoration;
+          letter-spacing: 0.04em;
+        }
+      }
+    }
+    .content_box_bottom {
+      margin: 150px 0 0 110px;
+      .box_bottom_bottom {
+        margin: 40px 0 0 190px;
+        padding-bottom: 180px;
+      }
+    }
+  }
+}
+
+.content_title {
+  font-family: Cormorant;
+  font-size: 60px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $lightGreenColor;
+}
+
+.content_subtitle {
+  @extend %fontDecoration;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
