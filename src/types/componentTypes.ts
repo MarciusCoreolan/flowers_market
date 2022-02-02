@@ -22,6 +22,10 @@ export interface ISlider {
   items: Ibuket[];
 }
 
+export interface IInput {
+    placeholder: string
+}
+
 export interface Ifeedback {
   id: number;
   bouquetsId: number;
