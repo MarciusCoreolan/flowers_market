@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./product.module.scss";
 import quotation from "../../images/quotation .svg";
-import Rating from "react-rating";
 import {Ifeedback} from "../../types/componentTypes"
   
 function Reviev({feedback}:any) {

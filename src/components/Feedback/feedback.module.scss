@@ -36,24 +36,6 @@
 
 
 .forms {
-  .forms_input {
-    width: 445px;
-    border: 1px solid #555555;
-    box-sizing: border-box;
-    padding: 20px 0 20px 20px;
-    margin-bottom: 10px;
-    font-family: Oswald;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #555555;
-    background: rgba(0, 0, 0, 0.2);
-    &:focus {
-      border: 1px solid #FFFFFF;
-      color: #FFFFFF;
-    }
-  }
   textarea {
     height: 120px;
   }
