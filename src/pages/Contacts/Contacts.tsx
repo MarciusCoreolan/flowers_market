@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./contacts.module.scss";
 import BoxGroup from "./BoxGroup";
 import Maps from "./Maps";

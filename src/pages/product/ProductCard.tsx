@@ -38,7 +38,6 @@ function ProductCard() {
   return (
     <div className={styles.product}>
       <div className="container">
-        <Header />
         <div className={styles.main}>
           <div>
             <img src={productImage} alt="" />

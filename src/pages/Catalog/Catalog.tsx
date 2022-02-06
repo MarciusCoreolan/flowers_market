@@ -3,7 +3,6 @@ import Cards from "../../components/cards/Cards";
 
 import Title from "../../components/Title/Title";
 
-
 function Catalog() {
   return (
     <div className={styles.catalog}>

@@ -3,6 +3,7 @@
 
 body{
   background-color: $darkColor;
+  overflow-x: hidden;
 }
 
 * {
@@ -32,6 +33,22 @@ h6 {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.exit {
+  width: 420px;
+}
+.exit-active {
+  width: 0;
+  transition: width 1000ms;
+}
+
+.enter {
+  width: 0;
+}
+.enter-active {
+  width: 420px;
+  transition: width 1000ms;
 }
 
 

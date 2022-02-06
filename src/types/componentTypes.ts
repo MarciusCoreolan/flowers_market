@@ -26,6 +26,16 @@ export interface IInput {
     placeholder: string
 }
 
+export interface IHeader {
+    active: any;
+    setActive: any
+}
+
+export interface ICart {
+    active: any;
+    setActive: any
+}
+
 export interface Ifeedback {
   id: number;
   bouquetsId: number;
