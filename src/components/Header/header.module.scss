@@ -64,5 +64,26 @@
         width: 30px;
         margin: 0 20px;
       }
+    .basket_modal {
+      position: absolute;
+      z-index: 100;
+      right: 440px;
+      top: 30px;
+      flex: 1;
+      animation: roll-in-right 0.5s ease-out both;
+    }
+  }
+}
+
+@keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(400px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
   }
 }

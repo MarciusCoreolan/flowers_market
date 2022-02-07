@@ -35,5 +35,5 @@ export interface fetchBouquesErrortAction {
 export type bouquestAction =
   | fetchBouquestAction
   | fetchBouquestSuccessAction
-  | fetchBouquesErrortAction;
+  | fetchBouquesErrortAction
 

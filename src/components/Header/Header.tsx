@@ -5,8 +5,16 @@ import lightPhone from "../../images/mdi-light_phone.svg";
 import basket from "../../images/basket.svg";
 import { NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
+import {IHeader} from "../../types/componentTypes";
+import {useDispatch} from "react-redux";
 
-function Header() {
+
+function Header({ active, setActive }:IHeader ) {
+  const dispatch = useDispatch();
+  const handleChangeCart = () => {
+    dispatch(setActive(true))
+  }
+
   return (
     <div className={styles.header}>
     <div className={styles.header_container}>
@@ -33,7 +41,7 @@ function Header() {
               </div>
               <div>+375 (29) 113-69-69</div>
             </div>
-            <div className={styles.basket}>
+            <div className={active ? styles.basket_modal : styles.basket} onClick={handleChangeCart}>
               <img src={basket} alt="" />
             </div>
           </div>
